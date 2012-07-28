@@ -15,12 +15,9 @@ public class MonkeyTrouble implements Testcase{
 	}
 	@Override
 	public boolean runTest(){
-		/*
-			monkeyTrouble(true, true) -> true
-			monkeyTrouble(false, false) -> true
-			monkeyTrouble(true, false) -> false
-			monkeyTrouble(false, true) -> false
-		*/
-		return(monkeyTrouble(true, true) && monkeyTrouble(false, false) && monkeyTrouble(true, false) && monkeyTrouble(false, true));
+		return (monkeyTrouble(true, true) &&
+				monkeyTrouble(false, false) &&
+				monkeyTrouble(true, false) &&
+				monkeyTrouble(false, true));
 	}
 }

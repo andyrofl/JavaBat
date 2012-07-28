@@ -15,12 +15,9 @@ public class SleepIn implements Testcase{
 	}
 	@Override
 	public boolean runTest(){
-		/*
-			sleepIn(false, false) -> true 
-			sleepIn(true, false) -> false   
-			sleepIn(false, true) -> true   
-			sleepIn(true, true) -> true
-		 */
-		return(sleepIn(false, false) && !sleepIn(true, false) && sleepIn(false, true) && sleepIn(true, true));
+		return (sleepIn(false, false) &&
+				!sleepIn(true, false) &&
+				sleepIn(false, true) &&
+				sleepIn(true, true));
 	}
 }

@@ -7,7 +7,7 @@ public class ParrotTrouble implements Testcase{
 
 	/**
 	 * @pre hour is between 0 & 23 inclusive
-	 * @post 
+	 * @post returned true if trouble, false otherwise
 	 */
 	public boolean parrotTrouble(boolean talking, int hour){
 		return talking && (hour < 7 || hour > 20);
